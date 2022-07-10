@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Восстановление пароля</title>
+</head>
+
+<body>
+    <main>
+		
+		<img src="img/logo_ncrm.svg" alt="NCRM" class="logo">
+
+        <div class="index-form-container sign-in">
+            <form id="form_crm" action="">
+					<div style="margin-bottom: 24px;">
+                <h1 class="form-title title-recovery">
+						Восстановление пароля
+                </h1>
+					 <span class="recovery">Введите новый пароль</span>
+               </div>
+					 <div class="form-fields">
+                    <div class="form-field">
+                        <input class="correct" id="email" type="email" placeholder="Email" minlength="3" maxlength="30">
+                    </div>
+						  <div class="form-field">
+							<input class="correct" type="password" id="password-input" placeholder="Пароль" minlength="8" maxlength="128">
+							<a href="#" class="password-control sign-in-eye" onclick="return show_hide_password(this);"></a>
+					  </div>
+					  <div class="form-field">
+						<input class="correct" type="password" id="password-input-repeat" placeholder="Подтвердить пароль" minlength="8" maxlength="128">
+						<a href="#" class="password-control sign-in-eye" onclick="return show_hide_password_repeat(this);"></a>
+				  </div>
+					 </div>
+                <div class="form-buttons">
+                    <button class="button" id="submit_button" onclick="return validateForm()">Войти</button>
+                </div>
+            </form>
+        </div>
+    </main>
+	 <script src="js/script.js"></script>
+</body>
+
+</html>

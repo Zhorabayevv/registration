@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Вход</title>
+</head>
+
+<body>
+    <main>
+		
+		<img src="img/logo_ncrm.svg" alt="NCRM" class="logo">
+
+        <div class="index-form-container sign-in">
+            <form id="form_crm" action="">
+					<div style="display: flex;justify-content: space-between;">
+                <h1 class="form-title title-sign-in">
+                    Вход
+                </h1>
+					 <span style="font-size: 12px; padding-top: 3px;">
+					 <span>Еще нет аккаунта?</span><a style="color: #5775D1;" href="index.html"> Зарегистрироваться</a>
+					</span>
+				</div>
+                <div class="form-fields">
+                    <div class="form-field">
+							<img class="img" src="img/mail.svg" alt="email">
+                        <input class="sign-in-input" type="email"  id="email" placeholder="Email">
+                    </div>
+                    <div class="form-field">
+							<img class="img" src="img/lock.svg" alt="lock">
+                        <input class="sign-in-input" type="password" id="password-input" placeholder="Пароль" minlength="8" maxlength="128">
+								<a href="#" class="password-control sign-in-eye" onclick="return show_hide_password(this);"></a>
+                    </div>
+						<div class="form-field">
+						  <label class="container">Запомнить меня
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						 </label>
+						 <a href="recovery.html" class="forgot">Забыли пароль?</a>
+						</div>
+                <div class="form-buttons">
+                    <button class="button" id="submit_button" onclick="return validateForm()">Войти</button>
+                </div>
+            </form>
+        </div>
+    </main>
+	 <script src="js/script.js"></script>
+</body>
+
+</html>
