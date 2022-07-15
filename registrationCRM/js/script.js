@@ -1,15 +1,15 @@
-let crms = ["в", "ва", "лора"] 
-var crm = document.querySelector('#crms');
-if(crms){
-if(crm){
-crms.forEach(c =>{
-	crm.innerHTML += `<div class="crm">
-	 ${c}
-	 <img src="img/circle-arrow-right.svg" alt="go">
- </div>`
-})
-}
-}
+// let crms = ["в", "ва", "лора"] 
+// var crm = document.querySelector('#crms');
+// if(crms){
+// if(crm){
+// crms.forEach(c =>{
+// 	crm.innerHTML += `<div class="crm">
+// 	 ${c}
+// 	 <img src="img/circle-arrow-right.svg" alt="go">
+//  </div>`
+// })
+// }
+// }
 
 
 function show_hide_password(target){

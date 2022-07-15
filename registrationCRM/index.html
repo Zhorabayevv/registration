@@ -18,7 +18,7 @@
 		<img src="img/logo_ncrm.svg" alt="NCRM" class="logo">
 
         <div class="index-form-container registration">
-            <form id="form_crm" action="" method="post">
+            <form id="form_crm" action="" method="post"> 
                 <h1 class="form-title title-sign-in">
                     Регистрация
                 </h1>
@@ -26,18 +26,23 @@
                     <div class="form-field">
                         <input class="correct" id="name" type="text" placeholder="Имя" minlength="3" maxlength="30"
                             title="Имя может содержать только буквы.">
-
+									 <!-- class error -->
+									 <!-- <img class="alert-circle" src="img/alert-circle.svg" alt="error"><span class="errorTip">Имя не должно быть меньше 3 и больше 30 символов</span> -->
                     </div>
                     <div class="form-field">
-                        <input class="correct" type="email" id="email" placeholder="Email">
+                        <input class="correct" type="email" id="email" placeholder="Email" maxlength="30">
+								<!-- class error -->
+								<!-- <img class="alert-circle" src="img/alert-circle.svg" alt="error"><span class="errorTip">Неверный email. Попробуйте еще раз</span> -->
                     </div>
                     <div class="form-field">
-                        <input class="correct" type="password" id="password-input" onchange="checkPasswords()" placeholder="Пароль" >
+                        <input class="correct" type="password" id="password-input" onchange="checkPasswords()" minlength="8" maxlength="30" placeholder="Пароль" >
 								<a href="#" class="password-control index-eye" onclick="return show_hide_password(this);"></a>
                     </div>
 						  <div class="form-field">
-							<input class="correct" type="password" id="password-input-repeat" onchange="checkPasswords()" placeholder="Подтвердить пароль" >
+							<input class="correct" type="password" id="password-input-repeat" onchange="checkPasswords()" minlength="8" maxlength="30" placeholder="Подтвердить пароль" >
+							<!-- input class="error" -->
 							<a href="#" class="password-control index-eye" onclick="return show_hide_password_repeat(this);"></a>
+							<!--<img class="alert-circle" src="img/alert-circle.svg" alt="error"><span class="errorTip">Пароли не совпадают</span> -->
 					  </div>
 					  <div class="form-field">
 							

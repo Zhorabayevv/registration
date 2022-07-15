@@ -29,12 +29,16 @@
                 <div class="form-fields">
                     <div class="form-field">
 							<img class="img" src="img/mail.svg" alt="email">
-                        <input class="sign-in-input" type="email"  id="email" placeholder="Email">
+                        <input class="sign-in-input" type="email" id="email" maxlength="30" placeholder="Email">
+								<!-- class убрать и дать error -->
+								<!-- <img class="alert-circle" src="img/alert-circle.svg" alt="error"><span class="errorTip">Неверный email. Попробуйте еще раз</span> -->
                     </div>
                     <div class="form-field">
 							<img class="img" src="img/lock.svg" alt="lock">
                         <input class="sign-in-input" type="password" id="password-input" placeholder="Пароль" minlength="8" maxlength="128">
+								<!-- class убрать и дать error -->
 								<a href="#" class="password-control sign-in-eye" onclick="return show_hide_password(this);"></a>
+								<!-- <img class="alert-circle" src="img/alert-circle.svg" alt="error"><span class="errorTip">Неверный пароль. Попробуйте еще раз</span> -->
                     </div>
 						<div class="form-field">
 						  <label class="container">Запомнить меня
